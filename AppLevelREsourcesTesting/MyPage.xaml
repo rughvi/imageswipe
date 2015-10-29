@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AppLevelREsourcesTesting.MyPage"
+xmlns:my="clr-namespace:AppLevelREsourcesTesting;assembly=AppLevelREsourcesTesting">
+	<ContentPage.Content>
+	<ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+<!--		<RelativeLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+			<my:MyView x:Name="myImageView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Red"
+				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Y, Constant=0}"
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+				RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}"/>
+			<StackLayout Orientation="Horizontal" HeightRequest="100" BackgroundColor="Blue" Padding="0,10,0,10"
+				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=myImageView, Property=Height, Constant=20}"
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}">
+				<Button Text="Hi" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></Button>
+			</StackLayout>
+		</RelativeLayout>-->
+
+
+<!--  below testing image only   -->
+<!--		<RelativeLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+			<my:MyImage Source="https://itandmecloud.blob.core.windows.net/04f90a340fdc89e261908ee7fb012d27c93a802bbf3239ffd4945cc9aeb7a51/thumbnail/447777788888/358714058742028/IMG-20150521-WA0000.jpg" x:Name="myImageView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Red"
+				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Y, Constant=0}"
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+				RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}"/>
+			<StackLayout Orientation="Horizontal" HeightRequest="100" BackgroundColor="Blue" Padding="0,10,0,10"
+				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=myImageView, Property=Height, Constant=20}"
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}">
+				<Button Text="Hi" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></Button>
+			</StackLayout>
+		</RelativeLayout>-->
+
+		<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+			<my:MyImage x:Name="myImageView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Red">
+			</my:MyImage>
+			<StackLayout Orientation="Horizontal" HeightRequest="100" BackgroundColor="Blue" Padding="0,0,0,0">
+				<Button Text="Hi" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></Button>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" HeightRequest="100" BackgroundColor="Blue" Padding="0,0,0,0">
+				<Button Text="Hi" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></Button>
+			</StackLayout>
+		</StackLayout>
+
+	</ScrollView>
+	</ContentPage.Content>
+</ContentPage>
